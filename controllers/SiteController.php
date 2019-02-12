@@ -9,9 +9,6 @@ use yii\web\Response;
 use yii\filters\VerbFilter;
 use app\models\LoginForm;
 use app\models\ContactForm;
-use yii\httpclient\Client;
-use yii\helpers\ArrayHelper;
-use app\models\Currency;
 
 class SiteController extends Controller
 {
@@ -38,6 +35,7 @@ class SiteController extends Controller
      */
     public function actionIndex()
     {
+        ddd(Yii::$app->currencyImportManager->xmlUrl);
         return $this->render('index');
     }
 

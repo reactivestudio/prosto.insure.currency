@@ -26,6 +26,10 @@ $config = [
             ],
         ],
         'db' => $db,
+        'currency' => [
+            'class' => 'app\components\CurrencyImportManager',
+            'xmlUrl' => 'http://www.cbr.ru/scripts/XML_daily.asp',
+        ],
     ],
     'params' => $params,
     /*

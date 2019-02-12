@@ -61,7 +61,7 @@ $config = [
                     'only' => ['view'],
                 ],
             ],
-        ]
+        ],
     ],
     'params' => $params,
 ];
